@@ -7,7 +7,7 @@
     <ItemTemplate>
         <div class="product_box">
             <asp:Label ID="Label1" runat="server" Text='<%# Eval("Name") %>' CssClass="product_name"></asp:Label><br />
-            <asp:Image ID="Image1" runat="server" Width="100px" Height="100px" ImageUrl='<%# "~/images/products/" + Eval("FilePath")%>' /><br />
+            <asp:Image ID="Image1" runat="server" Width="100px" Height="100px" ImageUrl='<%# "~/images/Beverages/" + Eval("ImageFilePath")%>' /><br />
             <asp:Label ID="Label2" runat="server" Text='<%# Eval("Price") %>' CssClass="product_price"></asp:Label><br />
             <asp:HyperLink ID="HyperLink1" NavigateUrl='<%#"~/Details.aspx?id="+Eval("id") %>' runat="server" CssClass="product_view">View Details</asp:HyperLink>
         </div>

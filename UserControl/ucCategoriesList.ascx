@@ -3,7 +3,7 @@
 
     <ItemTemplate>
         <li>
-            <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# Eval("CatName") + "("+ Eval("Beverages.Count")+")" %>' NavigateUrl='<%# "~/Category.aspx?id=" + Eval("CatID")%>'></asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" Text='<%# Eval("CatName") + "("+ Eval("Beverages.Count")+")" %>' NavigateUrl='<%# "~/Category.aspx?CatID=" + Eval("CatID")%>'></asp:HyperLink>
         </li>
     </ItemTemplate>
 
